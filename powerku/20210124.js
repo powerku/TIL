@@ -20,6 +20,7 @@ function solution(progresses, speeds) {
     var count;
 
     while (progresses.length > 0) {
+        // 1. 작업속도
         for (var i = 0; i < progresses.length; i++) {
             if (progresses[i] < 100) {
                 progresses[i] += speeds[i];
@@ -29,6 +30,7 @@ function solution(progresses, speeds) {
 
         count = 0;
         var i = 0;
+        // 2. 기능 배포
         while (i < progresses.length) {
             if (progresses[i] >= 100) {
                 i++;
