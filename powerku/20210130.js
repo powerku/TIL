@@ -50,7 +50,7 @@ function solution(jobs) {
 
     while(jobs.length > 0) {
 
-        for(var i = 0; i < jobs.length; i++) {
+        for (var i = 0; i < jobs.length; i++) {
             if(jobs[i][0] <= time ) {
                 arr.push(jobs[i]);
             }
