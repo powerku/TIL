@@ -7,8 +7,7 @@ function solution(numbers) {
     })
 
     answer.sort(function(a, b) {
-        return Number(b+a) - Number(a+b);
-        // return (a+b) - (b+a);
+        return (b+a) - (a+b);
     })
 
     return answer[0] === '0' ? '0' : answer.join('');
