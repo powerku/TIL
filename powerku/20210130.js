@@ -31,7 +31,7 @@
  * 
  */
 
-console.log(solution([[0, 3], [1, 9], [2, 6]]));
+console.log(solution2([[1,9], [1, 9]]));
 // console.log(solution([[0, 3], [1, 9], [1, 6], [2, 6]]));
 // console.log(solution([[0, 1], [1000, 1000]]));
 // console.log(solution([[100, 100], [1000, 1000]]));
@@ -50,7 +50,7 @@ function solution(jobs) {
 
     while(jobs.length > 0) {
 
-        for(var i = 0; i < jobs.length; i++) {
+        for (var i = 0; i < jobs.length; i++) {
             if(jobs[i][0] <= time ) {
                 arr.push(jobs[i]);
             }
